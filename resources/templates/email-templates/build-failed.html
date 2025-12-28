@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Build Failed</title></head>
+<body style="font-family: Arial;">
+  <h2>❌ Build Failed</h2>
+  <div style="background: #fee; padding: 10px; border-left: 4px solid #f66;">
+    <p><strong>Job:</strong> ${JOB_NAME} #${BUILD_NUMBER}</p>
+    <p><strong>Failed Stage:</strong> ${STAGE_NAME}</p>
+    <p><strong>Duration:</strong> ${BUILD_DURATION}</p>
+  </div>
+  <p><a href="${BUILD_URL}console">View Console Output</a></p>
+</body>
+</html>

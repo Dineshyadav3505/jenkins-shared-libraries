@@ -1,0 +1,20 @@
+{
+  "environments": {
+    "dev": {
+      "namespace": "dev",
+      "imageTag": "latest",
+      "replicas": 1
+    },
+    "staging": {
+      "namespace": "staging",
+      "imageTag": "${BUILD_NUMBER}",
+      "replicas": 2
+    },
+    "prod": {
+      "namespace": "production",
+      "imageTag": "${BUILD_NUMBER}",
+      "replicas": 3,
+      "approvalRequired": true
+    }
+  }
+}

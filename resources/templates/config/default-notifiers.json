@@ -1,0 +1,10 @@
+{
+  "slack": {
+    "channel": "#ci-cd-notifications",
+    "tokenId": "slack-token-id"
+  },
+  "email": {
+    "recipients": ["devops@company.com", "team@company.com"],
+    "smtpServer": "smtp.company.com"
+  }
+}

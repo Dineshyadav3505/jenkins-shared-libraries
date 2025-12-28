@@ -1,0 +1,24 @@
+{
+  "success": {
+    "text": ":white_check_mark: *${JOB_NAME}* #${BUILD_NUMBER} **SUCCESS**",
+    "attachments": [{
+      "color": "good",
+      "fields": [
+        {"title": "Duration", "value": "${BUILD_DURATION}", "short": true},
+        {"title": "Branch", "value": "${GIT_BRANCH}", "short": true},
+        {"title": "Environment", "value": "${ENVIRONMENT}", "short": true}
+      ]
+    }]
+  },
+  "failure": {
+    "text": ":x: *${JOB_NAME}* #${BUILD_NUMBER} **FAILED**",
+    "attachments": [{
+      "color": "danger",
+      "fields": [
+        {"title": "Duration", "value": "${BUILD_DURATION}", "short": true},
+        {"title": "Stage", "value": "${STAGE_NAME}", "short": true},
+        {"title": "Console", "value": "${BUILD_URL}", "short": false}
+      ]
+    }]
+  }
+}
